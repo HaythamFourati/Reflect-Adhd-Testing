@@ -34,10 +34,10 @@
                 } else {
                     echo '<ul class="space-y-2">';
                     echo '<li><a href="' . esc_url(home_url('/')) . '" class="hover:text-white">Home</a></li>';
-                    echo '<li><a href="#" class="hover:text-white">About Dr. Friedman</a></li>';
-                    echo '<li><a href="#" class="hover:text-white">How It Works</a></li>';
-                    echo '<li><a href="#" class="hover:text-white">FAQs</a></li>';
-                    echo '<li><a href="#" class="hover:text-white">Contact Us</a></li>';
+                    echo '<li><a href="' . esc_url(home_url('/about-dr-friedman/')) . '" class="hover:text-white">About Dr. Friedman</a></li>';
+                    echo '<li><a href="' . esc_url(home_url('/how-it-works/')) . '" class="hover:text-white">How It Works</a></li>';
+                    echo '<li><a href="' . esc_url(home_url('/faqs/')) . '" class="hover:text-white">FAQs</a></li>';
+                    echo '<li><a href="' . esc_url(home_url('/contact-us/')) . '" class="hover:text-white">Contact Us</a></li>';
                     echo '</ul>';
                 }
                 ?>

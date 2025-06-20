@@ -98,6 +98,23 @@ add_action('widgets_init', 'reflect_neuro_widgets_init');
 // Load Customizer settings
 require get_template_directory() . '/inc/customizer.php';
 
+// Register custom rewrite rule for city pages.
+function reflect_neuro_city_page_rewrite_rule() {
+    add_rewrite_rule(
+        '^adhd-testing/([^/]+)/?$',
+        'index.php?pagename=$matches[1]',
+        'top'
+    );
+}
+add_action('init', 'reflect_neuro_city_page_rewrite_rule');
+
+// Flush rewrite rules on theme activation to apply changes.
+function reflect_neuro_flush_rewrite_rules() {
+    reflect_neuro_city_page_rewrite_rule();
+    flush_rewrite_rules();
+}
+add_action('after_switch_theme', 'reflect_neuro_flush_rewrite_rules');
+
 // Load Schema markup functions
 require get_template_directory() . '/inc/schema.php';
 
