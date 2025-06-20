@@ -148,7 +148,7 @@ if (!class_exists('Custom_Nav_Walker')) {
                                         echo '<div class="flex-1">';
                                         foreach ($chunk as $city) {
                                             $city_slug = sanitize_title($city);
-                                            echo '<a href="' . esc_url(home_url('/adhd-testing/' . $city_slug)) . '" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">' . esc_html($city) . '</a>';
+                                            echo '<a href="' . esc_url(home_url('/' . $city_slug . '-adhd-testing/')) . '" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md">' . esc_html($city) . '</a>';
                                         }
                                         echo '</div>';
                                     }
@@ -223,7 +223,7 @@ if (!class_exists('Custom_Nav_Walker')) {
                                     echo '<div class="w-1/2 px-2">';
                                     foreach ($chunk as $city) {
                                         $city_slug = sanitize_title($city);
-                                        echo '<a href="' . esc_url(home_url('/adhd-testing/' . $city_slug)) . '" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md">' . esc_html($city) . '</a>';
+                                        echo '<a href="' . esc_url(home_url('/' . $city_slug . '-adhd-testing/')) . '" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md">' . esc_html($city) . '</a>';
                                     }
                                     echo '</div>';
                                 }

@@ -59,7 +59,7 @@
                 echo '<ul class="space-y-2">';
                 foreach ($chunk as $city) {
                     $city_slug = sanitize_title($city);
-                    echo '<li><a href="' . esc_url(home_url('/adhd-testing/' . $city_slug)) . '" class="hover:text-white">ADHD Testing in ' . esc_html($city) . '</a></li>';
+                    echo '<li><a href="' . esc_url(home_url('/' . $city_slug . '-adhd-testing/')) . '" class="hover:text-white">ADHD Testing in ' . esc_html($city) . '</a></li>';
                 }
                 echo '</ul>';
                 echo '</div>';
