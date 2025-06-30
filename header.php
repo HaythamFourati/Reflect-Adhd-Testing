@@ -125,12 +125,13 @@ if (!class_exists('Custom_Nav_Walker')) {
                 ));
                 ?>
                 
-                <?php if (!is_nav_menu('primary')): ?>
+                <?php if (!has_nav_menu('primary')): ?>
                     <!-- Default menu items if no menu is assigned -->
                     <ul class="flex space-x-6">
                         <li><a href="<?php echo esc_url(home_url('/')); ?>" class="text-gray-600 hover:text-blue-600">Home</a></li>
                         <li><a href="<?php echo esc_url(home_url('/about-dr-friedman')); ?>" class="text-gray-600 hover:text-blue-600">About Dr. Friedman</a></li>
                         <li><a href="<?php echo esc_url(home_url('/how-it-works')); ?>" class="text-gray-600 hover:text-blue-600">How It Works</a></li>
+                        <li><a href="<?php echo esc_url(get_post_type_archive_link('post')); ?>" class="text-gray-600 hover:text-blue-600">Blog</a></li>
                         <li><a href="<?php echo esc_url(home_url('/faqs')); ?>" class="text-gray-600 hover:text-blue-600">FAQs</a></li>
                         <li><a href="<?php echo esc_url(home_url('/contact-us')); ?>" class="text-gray-600 hover:text-blue-600">Contact Us</a></li>
                         <li class="relative group">
@@ -199,6 +200,7 @@ if (!class_exists('Custom_Nav_Walker')) {
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100">Home</a>
                 <a href="<?php echo esc_url(home_url('/about-dr-friedman')); ?>" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100">About Dr. Friedman</a>
                 <a href="<?php echo esc_url(home_url('/how-it-works')); ?>" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100">How It Works</a>
+                <a href="<?php echo esc_url(get_post_type_archive_link('post')); ?>" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100">Blog</a>
                 <a href="<?php echo esc_url(home_url('/faqs')); ?>" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100">FAQs</a>
                 <a href="<?php echo esc_url(home_url('/contact-us')); ?>" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100">Contact Us</a>
                 
