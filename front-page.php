@@ -203,7 +203,7 @@ get_header();
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-6">
                 <?php foreach ($cities as $city) : ?>
                     <?php $city_slug = sanitize_title($city); ?>
-                    <a href="<?php echo esc_url(home_url($city_slug .'/adhd-testing/')); ?>" class="city-card block bg-slate-50 hover:bg-slate-100 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 text-center">
+                    <a href="<?php echo esc_url(home_url($city_slug .'-adhd-testing/')); ?>" class="city-card block bg-slate-50 hover:bg-slate-100 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 text-center">
                         <span class="text-lg font-semibold text-gray-700 block mb-1"><?php echo esc_html($city); ?></span>
                         <span class="text-sm text-blue-600 block">ADHD Testing</span>
                     </a>
