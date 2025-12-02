@@ -1,0 +1,19 @@
+/* Fix for Contact Form 7 label spacing */
+.wpcf7 label.block {
+    margin-bottom: -19px !important;
+}
+
+.wpcf7 .wpcf7-form-control {
+    margin-top: 0.25rem !important;
+    margin-bottom: 19px !important;
+}
+
+/* Fix any Contact Form 7 validation styling issues */
+.wpcf7-not-valid-tip {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+    margin-bottom: 0px !important;
+}
